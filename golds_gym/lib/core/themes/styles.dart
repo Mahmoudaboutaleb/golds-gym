@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import 'package:golds_gym/core/themes/colors.dart';
+
+class Styles {
+  static TextStyle font15White70Weight400 = TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.normal,
+    color: Colors.white70,
+  );
+  static TextStyle font13YellowWeight400 = TextStyle(
+    fontSize: 13,
+    fontWeight: FontWeight.w400,
+    color: ColorsManager.primaryColor,
+  );
+  static TextStyle font14BlackWeight400 = TextStyle(
+      fontSize: 14, fontWeight: FontWeight.w400, color: Color(0xFF231F20));
+  static TextStyle font14GreyWeight400 = TextStyle(
+      fontSize: 14, fontWeight: FontWeight.w400, color: Color(0xFF9D9D9D));
+  static TextStyle font15whiteWeight700 = TextStyle(
+      fontSize: 15, fontWeight: FontWeight.w700, color: Color(0xFFFFFFFF));
+
+  static TextStyle font28YellowWeight700 = TextStyle(
+    fontSize: 28,
+    fontWeight: FontWeight.w700,
+    color: ColorsManager.primaryColor,
+  );
+}
