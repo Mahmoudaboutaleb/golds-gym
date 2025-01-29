@@ -1,8 +1,8 @@
 name: golds_gym
 description: "A new Flutter project."
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: "none" # Remove this line if you wish to publish to pub.dev
+# السطر التالي يمنع الحزمة من النشر إلى pub.dev
+# باستخدام الأمر `flutter pub publish`. يفضل استخدامه للحزم الخاصة.
+publish_to: "none" # قم بإزالة هذا السطر إذا كنت ترغب في نشر الحزمة إلى pub.dev
 
 version: 1.0.0+1
 
@@ -13,13 +13,16 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
   flutter_screenutil: ^5.9.3
   flutter_svg: ^2.0.16
   go_router: ^14.6.2
   keyboard_avoider: ^0.2.0
+  shared_preferences: ^2.3.5
+  easy_date_timeline: ^2.0.6
+  intl: ^0.19.0
 
 dev_dependencies:
-
   flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
@@ -29,15 +32,33 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/Upcoming Classes/
+    - assets/images/Events_offers/
+    - assets/images/News/
+    - assets/images/gallery/
+    - assets/images/classes/
     - assets/svg/
+    - assets/svg/gallery/
+    - assets/fonts/
 
   fonts:
     - family: NeoSansArabic
       fonts:
-        - asset: assets/fonts/NeoSansArabic-Regular.ttf
-        - asset: assets/fonts/NeoSansArabic-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/NeoSansArabic-ExtraBold.ttf
-          weight: 800
-        - asset: assets/fonts/NeoSansArabic-Medium.ttf
-          weight: 500
+        - asset: assets/fonts/NeoSansArabicLight.ttf
+          weight: 300 # Light
+        - asset: assets/fonts/Neo Sans Arabic Regular.ttf
+          weight: 400 # Regular
+        - asset: assets/fonts/Neo_Sans_Medium.ttf
+          weight: 500 # Medium
+        - asset: assets/fonts/NeoSansArabicBold.ttf
+          weight: 700 # Bold
+        - asset: assets/fonts/NeoSansArabicBlack.ttf
+          weight: 800 # Black
+        - asset: assets/fonts/NeoSansArabicMedium.ttf
+          weight: 600 # Medium (إذا كانت النسخة المطلوبة)
+        - asset: assets/fonts/NeoSansArabicUltra.ttf
+          weight: 900 # Ultra
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/roboto/Roboto-Regular.ttf
+          weight: 400 # Regular

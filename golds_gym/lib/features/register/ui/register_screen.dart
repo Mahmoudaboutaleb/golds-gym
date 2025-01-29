@@ -107,7 +107,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             hintText: "WhatsApp Number",
                           ),
                           SizedBox(height: 16.h),
-                          GoldsgymButtonWidget(title: "Send"),
+                          GoldsgymButtonWidget(
+                            title: "Send",
+                            onPressed: () {},
+                          ),
                           SizedBox(height: 56.h),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
