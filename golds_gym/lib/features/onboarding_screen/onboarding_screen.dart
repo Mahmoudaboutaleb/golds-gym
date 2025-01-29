@@ -3,6 +3,8 @@ import 'package:golds_gym/core/helpers/extensions.dart';
 import 'package:golds_gym/core/routing/routes.dart';
 import 'package:golds_gym/core/themes/colors.dart';
 import 'package:golds_gym/core/themes/styles.dart';
+// import 'package:golds_gym/features/classes/ui/classes_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -10,8 +12,13 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        context.pushNamed(Routes.loginScreen);
+      onTap: () async {
+        final prefs = await SharedPreferences.getInstance();
+        if (prefs.getBool('isLoggedIn') == true) {
+          context.pushNamed(Routes.classesScreen);
+        } else {
+          context.pushNamed(Routes.loginScreen);
+        }
       },
       child: Scaffold(
           body: SafeArea(

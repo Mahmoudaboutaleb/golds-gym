@@ -3,8 +3,10 @@ import 'package:golds_gym/core/themes/colors.dart';
 import 'package:golds_gym/core/themes/styles.dart';
 
 class GoldsgymButtonWidget extends StatelessWidget {
-  const GoldsgymButtonWidget({super.key, required this.title});
+  const GoldsgymButtonWidget(
+      {super.key, required this.title, required this.onPressed});
   final String title;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +17,11 @@ class GoldsgymButtonWidget extends StatelessWidget {
           style: ButtonStyle(
               backgroundColor:
                   WidgetStatePropertyAll(ColorsManager.primaryColor)),
+          onPressed: onPressed,
           child: Text(
             title,
             style: Styles.font14BlackWeight400,
-          ),
-          onPressed: () {}),
+          )),
     );
   }
 }

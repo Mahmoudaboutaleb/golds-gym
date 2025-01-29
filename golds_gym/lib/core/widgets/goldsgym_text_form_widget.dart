@@ -8,12 +8,14 @@ class GoldsgymTextFormWidget extends StatelessWidget {
       this.isSecure,
       this.controller,
       this.suffixIcons,
-      this.hintStyle});
+      this.hintStyle,
+      this.validator});
   final String hintText;
   final TextStyle? hintStyle;
   final bool? isSecure;
   final TextEditingController? controller;
   final Widget? suffixIcons;
+  final String? Function(String?)? validator;
   @override
   Widget build(BuildContext context) {
     return SizedBox(

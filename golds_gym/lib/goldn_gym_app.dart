@@ -12,8 +12,8 @@ class GoldsGymApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: Color(0xFF231F20),
+      SystemUiOverlayStyle(
+        statusBarColor: Color(0xFF231F20).withOpacity(0.90),
         statusBarIconBrightness: Brightness.light,
         systemNavigationBarColor: Color(0xFF231F20),
         systemNavigationBarIconBrightness: Brightness.light,
