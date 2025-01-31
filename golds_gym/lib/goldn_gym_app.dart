@@ -32,7 +32,7 @@ class GoldsGymApp extends StatelessWidget {
             scaffoldBackgroundColor: Color(0xFF231F20),
           ),
           onGenerateRoute: appRouter.onGenerateRoute,
-          initialRoute: Routes.navigationBottomBarScreen,
+          initialRoute: Routes.onBoardingScreen,
         ));
   }
 }

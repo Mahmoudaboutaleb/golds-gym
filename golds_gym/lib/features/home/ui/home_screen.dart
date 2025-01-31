@@ -49,6 +49,7 @@ class HomeScreen extends StatelessWidget {
       onWillPop: () => _onWillPop(context),
       child: Scaffold(
         body: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           child: Column(
             children: [
               Padding(

@@ -38,7 +38,12 @@ class _ClassesScreenState extends State<ClassesScreen> {
                 children: [
                   FilterTabAndCalenderWidgets(),
                   SizedBox(height: 10.h),
-                  ClassesListView()
+                  Expanded(
+                    child: SingleChildScrollView(
+                      physics: BouncingScrollPhysics(),
+                      child: ClassesListView(),
+                    ),
+                  ),
                 ],
               ),
             ),

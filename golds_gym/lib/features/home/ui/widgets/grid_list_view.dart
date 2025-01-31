@@ -16,7 +16,7 @@ class GalleryListView extends StatelessWidget {
     ];
 
     return SizedBox(
-      height: 240,
+      height: 205.h,
       child: GridView.builder(
         padding: EdgeInsets.zero,
         itemCount: gallerySvg.length,

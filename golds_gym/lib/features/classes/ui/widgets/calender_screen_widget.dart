@@ -72,34 +72,34 @@ class CalendarWidget extends StatelessWidget {
                     fontSize: 10.sp,
                     color: Color(0xFF979797),
                     fontWeight: FontWeight.w400,
-                    height: 3,
+                    height: 2.5.h,
                   ),
                   todayNumStyle: TextStyle(
                     fontSize: 10.sp,
                     color: Color(0xFF979797),
                     fontWeight: FontWeight.w400,
-                    height: 3,
+                    height: 2.5.h,
                   ),
                   inactiveDayStyle: DayStyle(
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.transparent),
                     ),
                     dayStrStyle: Styles.font12WhiteWeight400.copyWith(
-                      height: 3,
+                      height: 2.5.h,
                       color: Color(0xFF979797),
                     ),
                     dayNumStyle: Styles.font12WhiteWeight400.copyWith(
-                      height: 3,
+                      height: 2.5.h,
                       color: Color(0xFFFFFFFF),
                     ),
                   ),
                   dayStructure: DayStructure.dayStrDayNum,
                   activeDayStyle: DayStyle(
                     dayStrStyle: Styles.font12YellowWeight400.copyWith(
-                      height: 3,
+                      height: 2.5.h,
                     ),
                     dayNumStyle: Styles.font12YellowWeight400.copyWith(
-                      height: 3,
+                      height: 2.5.h,
                     ),
                     decoration: BoxDecoration(
                       border: Border.all(color: ColorsManager.primaryColor),

@@ -15,7 +15,7 @@ class OnboardingScreen extends StatelessWidget {
       onTap: () async {
         final prefs = await SharedPreferences.getInstance();
         if (prefs.getBool('isLoggedIn') == true) {
-          context.pushNamed(Routes.classesScreen);
+          context.pushNamed(Routes.navigationBottomBarScreen);
         } else {
           context.pushNamed(Routes.loginScreen);
         }
