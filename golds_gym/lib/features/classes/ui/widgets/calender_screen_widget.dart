@@ -21,6 +21,7 @@ class CalendarWidget extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
+            color: Color(0xFF131011).withOpacity(.35),
             border: Border(
               bottom: BorderSide(color: Color(0xFF2E2B2C)),
               top: BorderSide(color: Color(0xFF2E2B2C)),
