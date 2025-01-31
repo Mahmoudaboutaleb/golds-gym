@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:golds_gym/features/classes/ui/widgets/calender_screen_widget.dart';
 import 'package:golds_gym/features/classes/ui/widgets/classes_form.dart';
@@ -21,15 +20,6 @@ class _FilterTabAndCalenderWidgetsState
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(
-        statusBarColor: Color(0xFF131011).withOpacity(0.80),
-        statusBarIconBrightness: Brightness.light,
-        systemNavigationBarColor: Color(0xFF131011),
-        systemNavigationBarIconBrightness: Brightness.light,
-      ),
-    );
-
     return Column(
       children: [
         Container(

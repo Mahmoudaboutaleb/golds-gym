@@ -19,15 +19,14 @@ class _ClassesScreenState extends State<ClassesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF131011),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            ClassesTitleAndNoticationIcon(),
-            SizedBox(height: 20.h),
-            Container(
+      backgroundColor: Color(0xFF131011).withOpacity(.6),
+      body: Column(
+        children: [
+          ClassesTitleAndNoticationIcon(),
+          SizedBox(height: 14.h),
+          Expanded(
+            child: Container(
               width: 428.w,
-              height: 802.h,
               decoration: BoxDecoration(
                 color: Color(0xFF252122),
                 borderRadius: BorderRadius.only(
@@ -36,11 +35,15 @@ class _ClassesScreenState extends State<ClassesScreen> {
                 ),
               ),
               child: Column(
-                children: [FilterTabAndCalenderWidgets(), ClassesListView()],
+                children: [
+                  FilterTabAndCalenderWidgets(),
+                  SizedBox(height: 10.h),
+                  ClassesListView()
+                ],
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

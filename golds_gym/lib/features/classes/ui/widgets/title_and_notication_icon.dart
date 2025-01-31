@@ -10,7 +10,7 @@ class ClassesTitleAndNoticationIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(right: 17.0.w, top: 56.h),
+      padding: EdgeInsets.only(right: 17.0.w, top: 52.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

@@ -13,9 +13,9 @@ class GoldsGymApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
-        statusBarColor: Color(0xFF231F20).withOpacity(0.90),
+        statusBarColor: Color(0xFF131011).withOpacity(.2),
         statusBarIconBrightness: Brightness.light,
-        systemNavigationBarColor: Color(0xFF231F20),
+        systemNavigationBarColor: Color(0xFF272325),
         systemNavigationBarIconBrightness: Brightness.light,
       ),
     );
@@ -32,7 +32,7 @@ class GoldsGymApp extends StatelessWidget {
             scaffoldBackgroundColor: Color(0xFF231F20),
           ),
           onGenerateRoute: appRouter.onGenerateRoute,
-          initialRoute: Routes.onBoardingScreen,
+          initialRoute: Routes.navigationBottomBarScreen,
         ));
   }
 }
